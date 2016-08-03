@@ -1,5 +1,7 @@
-angular.module('your-app-name-goes-here', []);
-       //.config(config);
+angular.module('EarthIsScrewedApp', ['ngRoute'])
+	.controller('ExampleController', ExampleController)
+	.directive('nasaDisplay', nasaDisplay);
+       // .config(config);
 
 
 ////////////
@@ -10,14 +12,14 @@ angular.module('your-app-name-goes-here', []);
 // function config (  $routeProvider,   $locationProvider  )  {
 //   $routeProvider
 //     .when('/', {
-//       templateUrl: '',
-//       controller: '',
-//       controllerAs: ''
+//       templateUrl: '/templates/example-index.html',
+//       controller: 'ExampleController',
+//       controllerAs: 'dngr'
 //     })
 //     .otherwise({
 //       redirectTo: '/'
 //     });
-//
+
 //   $locationProvider
 //     .html5Mode({
 //       enabled: true,
